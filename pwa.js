@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const box=document.createElement('details');box.className='offline-guide';
-  box.innerHTML='<summary>手机体验 · <span id="offlineStatus" role="status">正在准备离线内容…</span></summary><div><p>iPhone：用 Safari 打开此网址，点“分享”→“添加到主屏幕”。以后从桌面图标进入。</p><p>等状态显示“可离线使用”后，题库、图片、280 个单词及 8 份听力录音已保存在此浏览器。首次下载约 14 MB，请保持页面打开。</p><p>微信内请先选择“在 Safari 中打开”。进度各自保存；清理网站数据会清除进度和下载内容，学习背包可以导出备份。</p><button id="retryOffline" hidden>重新保存离线内容</button><button id="updateOffline" hidden>结束本轮并更新</button></div>';
+  box.innerHTML='<summary>手机体验 · <span id="offlineStatus" role="status">正在准备离线内容…</span></summary><div><p>iPhone：用 Safari 打开此网址，点“分享”→“添加到主屏幕”。以后从桌面图标进入。</p><p>等状态显示“可离线使用”后，420 词题库、图片、280 个单词录音及 8 份听力录音已保存在此浏览器。新增 140 词使用设备英语语音，离线朗读需安装英语语音包。首次下载约 14 MB，请保持页面打开。</p><p>微信内请先选择“在 Safari 中打开”。进度各自保存；清理网站数据会清除进度和下载内容，学习背包可以导出备份。</p><button id="retryOffline" hidden>重新保存离线内容</button><button id="updateOffline" hidden>结束本轮并更新</button></div>';
   document.querySelector('footer').before(box);
   const status=box.querySelector('#offlineStatus'),retry=box.querySelector('#retryOffline'),update=box.querySelector('#updateOffline');
   let registration,reloading=false;

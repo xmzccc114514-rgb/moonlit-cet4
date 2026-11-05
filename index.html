@@ -43,13 +43,21 @@ button:active:not(:disabled){transform:scale(.96);transition:transform 80ms ease
 /* Existing moonlit art stays; the current word leads the study screen. */
 .studying-words .tabs,.studying-words footer{display:none}.study-panel{max-width:680px;margin:0 auto;padding:24px 28px 32px;background:#11253b;border:1px solid #334b63;border-radius:22px}.study-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}.study-heading h1{font:500 19px/1.4 var(--sans);letter-spacing:0}.study-heading p{font-size:12px;color:#b9c9d9;margin-top:5px}.study-heading button{font-size:13px;background:transparent}.study-scene{height:124px;margin:22px 0;background:#13283d var(--scene-art) center 46%/cover;border-radius:12px}.study-panel .vocab-card{padding:26px 0 20px;background:transparent;border:0;text-align:left}.study-panel .vocab-word,.study-panel .english-word{font:500 52px/1.15 Georgia,serif;letter-spacing:-.025em;color:#f5ecd9;overflow-wrap:anywhere}.study-panel .vocab-card .sound-row{justify-content:flex-start}.study-panel .sound-row button{background:transparent;border-color:#456079;border-radius:22px;min-height:44px}.study-panel #audioStatus{min-height:20px;margin:8px 0;font-size:12px;color:#adbed0}.study-panel #audioStatus:empty{display:block}.study-panel .vocab-definition{padding:18px;background:#1a334b;border:0;border-radius:12px}.study-panel .vocab-definition h3{font-size:21px}.study-panel .word-prompt{padding:20px 0 10px}.study-panel .quiz-meta{margin-top:16px;font-size:12px;color:#c1cfdd}.study-panel #roundStars{color:var(--gold);margin-left:14px}.word-trail{display:flex;gap:8px;align-items:center;margin:14px 0 0}.word-trail span{display:grid;place-items:center;flex:1;height:23px;max-width:46px;border-radius:6px;background:#213a52;border:1px solid #4c6276;color:#f5dda9;font-size:16px}.word-trail .current{border-color:#c6ac7d}.word-trail .lit{background:#4c422e;border-color:#d3b574}.word-trail .revisit{background:#453340;border-color:#ad8599}.study-panel .options{grid-template-columns:1fr;gap:10px}.study-panel .option{background:#1b344c;border-color:#3d5770;min-height:58px;font-size:16px;padding:15px 18px;border-radius:12px}.study-panel .option.correct{background:#413b2a;border-color:#f2ce89;color:#fff2d6}.study-panel .option.wrong{background:#492d3b;border-color:#d9a6b9}.study-panel .option.dim{opacity:.6}.study-panel .feedback{padding:17px;margin-top:16px;display:block;border-color:#82704d;background:#243445}.study-panel .feedback.error{border-color:#815a71}.study-panel .feedback strong{color:#f4dba5;line-height:1.7}.study-panel .feedback.error strong{color:#e5b8ca}.study-panel .feedback p{font-size:14px;line-height:1.8;color:#d2dce5}.study-panel .feedback button.primary{width:100%;margin-top:16px}.recall-help{display:block;margin:18px auto 0;border:0;background:transparent;color:#c8d5e1;font-size:14px;min-height:44px}.study-panel .question-instruction{font-size:14px}.study-panel .vocab-navigation{font-size:13px}.study-panel .drill-actions{margin-bottom:0}.study-panel .drill-actions button{flex:1}.reward-flight{font-size:24px!important}.study-panel button{transition:background 160ms ease,border-color 160ms ease,transform 140ms ease}.studying-words .masthead{padding-top:18px;padding-bottom:18px}#resultContent .word-trail{justify-content:center;margin:20px 0}#resultContent .word-trail span{max-width:30px}
 @media(max-width:520px){.studying-words .app-shell{padding:0 16px}.study-panel{padding:20px 18px 26px;border-radius:18px}.study-panel .study-scene{height:86px;margin:18px 0 12px;background-position:center 47%}.study-panel .vocab-word,.study-panel .english-word{font-size:44px}.study-panel .word-prompt{padding:16px 0 6px}.study-panel .vocab-card{padding-top:18px}.study-panel .option{font-size:16px;min-height:58px;padding:13px}.study-panel .quiz-meta{gap:8px}.word-trail{gap:5px}.word-trail span{height:21px}.study-heading h1{font-size:18px}.study-panel .drill-actions button{flex-basis:100%}}
+/* Compact guidance and a brief moonlit route cue; controls stay interactive. */
+.study-tip{margin:20px 0;padding:12px 16px;border-left:2px solid #b8a079;background:#172d42;color:#d6e1eb;font:14px/1.8 var(--sans);text-align:left}
+.study-tip>p>span{display:block;color:#e6c896;font-size:12px;margin-bottom:3px}
+.study-tip details{margin:4px 0 0}.study-tip summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:#bdcddd;font-size:13px}.study-tip summary::after{content:'＋';margin-left:auto;padding-left:12px}.study-tip details[open] summary::after{content:'−'}.study-tip details p{margin:6px 0 12px}.study-tip ul{margin:0;padding-left:18px}.study-tip li{margin:12px 0}.study-tip li strong{display:block;color:#edf0e7;font-weight:500}
+.word-targets{display:flex;gap:10px;margin:22px 0 16px}.word-targets button{flex:1;min-width:0;min-height:80px;background:#162c42;border:1px solid #486078;padding:12px 8px}.word-targets strong{display:block;font-size:26px;line-height:1.2;font-weight:500;font-variant-numeric:tabular-nums}.word-targets span{display:block;font-size:12px;margin-top:6px}.word-targets [aria-pressed=true]{border-color:#e5c991;background:#3c382d;color:#ffe6b6}
+.route-transition{position:fixed;inset:0;z-index:50;pointer-events:none;display:grid;place-items:center;background:rgba(10,24,40,.82);opacity:0}.route-sign{display:flex;align-items:center;gap:16px;color:#f2dfb7;font:500 19px/1.4 var(--sans);letter-spacing:.06em}.route-moon{display:block;width:32px;height:32px;border-radius:50%;box-shadow:inset -8px -4px 0 0 #e5c991;transform:rotate(-16deg)}
+.study-panel .word-trail,#resultContent .word-trail{display:grid;grid-template-columns:repeat(10,minmax(0,1fr))}.study-panel .word-trail span{width:100%;max-width:none}#resultContent .word-trail span{max-width:none}
+.reduce-motion .route-transition{display:none}@media(prefers-reduced-motion:reduce){.route-transition{display:none}}
 </style><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="月夜四级"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png"><link rel="stylesheet" href="pwa.css"></head>
 <body>
 <div class="app-shell">
  <header class="masthead"><a class="brand" href="#home" aria-label="回到月夜营地"><span class="moon-mark">☾</span><span>和你一起<span class="brand-sub">四级小冒险</span></span></a><div class="header-right"><button id="soundToggle" class="sound-toggle" aria-pressed="false" aria-label="静音所有声音">♫ 声音开</button><span class="star-count">✦ <b id="stars">0</b><small>星光</small></span><span class="save-state" id="saveState">进度保存在这台设备</span></div></header><!-- taste-skill-ignore: 用户已确认的月亮、星光与音乐符号，保留游戏语义。 -->
  <nav class="tabs" aria-label="主导航"><button data-view="home" class="active">☾ 月夜营地</button><button data-view="plan">⌁ 28 日旅途</button><button data-view="review">✧ 错词手账</button><button data-view="bag">▤ 学习背包</button></nav><!-- taste-skill-ignore: 用户已确认的月亮、星光与音乐符号，保留游戏语义。 -->
  <main id="main" tabindex="-1"></main>
- <footer><span>一步一步，也能走到很远的地方。</span><span>目标 425+ · 原创热身练习 + 你的课程与真题</span></footer>
+ <footer><span>一步一步，也能走到很远的地方。</span><span>1.3.0 · 目标 425+ · 原创热身练习 + 你的课程与真题</span></footer>
 </div>
 <div id="toast" role="status" aria-live="polite"></div>
 <dialog id="resultDialog" aria-labelledby="resultTitle"><div id="resultContent"></div><button id="closeResult" class="primary">回到月夜营地</button></dialog>
@@ -340,6 +348,152 @@ goal|目标|reach your goal`]
 const WORDS = WORD_GROUPS.flatMap(([theme, block], i) => block.split('\n').map(line => {
   const [en, zh, phrase] = line.split('|'); return { id:'w-'+en, en, zh, phrase, day:i+1, theme };
 }));
+/* 扩充词库：每个学习日增加 5 个，作为 10/20/30 词计划的连续词序。 */
+const EXTRA_WORD_GROUPS = [
+['分析与计划',`analyze|分析|analyze a problem
+acquire|获得；学到|acquire knowledge
+adjust|调整；适应|adjust to a new schedule
+balance|平衡|balance study and rest
+basic|基本的|basic skills`],
+['记忆与巩固',`combine|结合|combine study with practice
+concentrate|集中注意力|concentrate on the task
+memorize|记忆|memorize a phrase
+revise|修改；复习|revise for an exam
+recall|回忆|recall the main idea`],
+['逻辑与衔接',`furthermore|此外|Furthermore, it is useful.
+moreover|而且|Moreover, the plan saves time.
+meanwhile|与此同时|Meanwhile, she checked her notes.
+consequently|因此|Consequently, the cost fell.
+gradually|逐渐地|gradually improve`],
+['沟通与执行',`arrange|安排|arrange a meeting
+confirm|确认|confirm the date
+contact|联系|contact the office
+deliver|递送；发表|deliver a speech
+determine|决定；确定|determine the cause`],
+['校园与学术',`academic|学术的|academic research
+subject|科目；主题|a difficult subject
+term|学期；术语|the spring term
+laboratory|实验室|a science laboratory
+attendance|出勤；参加|regular attendance`],
+['时间与变化',`annual|每年的|an annual report
+former|以前的|a former student
+latter|后者的|the latter choice
+fixed|固定的|at a fixed time
+flexible|灵活的| a flexible schedule`],
+['动力与习惯',`motivate|激励|motivate students
+reward|奖励；回报|a small reward
+attempt|尝试|make an attempt
+habit|习惯|form a good habit
+persistence|坚持|persistence brings progress`],
+['社会连接',`connect|连接；联系|connect with people
+introduce|介绍；引入|introduce a new idea
+organize|组织|organize an event
+represent|代表|represent a group
+unite|团结；联合|unite the community`],
+['职业发展',`profession|职业|the medical profession
+recruit|招聘；吸收|recruit new workers
+resign|辞职|resign from a position
+promote|促进；晋升|promote teamwork
+perform|执行；表演|perform a task`],
+['出行探索',`route|路线|choose a route
+subway|地铁|take the subway
+luggage|行李|carry luggage
+explore|探索|explore a city
+commute|通勤|commute to work`],
+['健康与疾病',`nutrition|营养|good nutrition
+symptom|症状|a common symptom
+injury|伤害；受伤|recover from an injury
+medicine|药物；医学|take medicine
+infection|感染|prevent an infection`],
+['自然与气候',`habitat|栖息地|protect a habitat
+species|物种|endangered species
+atmosphere|大气；氛围|the Earth’s atmosphere
+temperature|温度|a rising temperature
+natural|自然的|natural resources`],
+['数字生活',`software|软件|install software
+hardware|硬件|computer hardware
+online|在线的|an online course
+virtual|虚拟的|a virtual meeting
+secure|安全的|a secure password`],
+['信息与流程',`publish|出版；发布|publish a report
+process|过程；处理|the learning process
+source|来源|check the source
+update|更新|update the record
+select|选择|select an answer`],
+['研究方法',`obtain|获得|obtain evidence
+conduct|进行；实施|conduct a survey
+define|定义|define a term
+demonstrate|证明；演示|demonstrate a skill
+involve|涉及|involve several factors`],
+['结构与重点',`priority|优先事项|set a priority
+feature|特点；以……为特色|a useful feature
+principle|原则|a basic principle
+function|功能；起作用|serve a function
+scale|规模；衡量|measure on a scale`],
+['表达与观点',`convince|说服|convince the reader
+express|表达|express an opinion
+mention|提到|mention an example
+prefer|更喜欢|prefer a quiet place
+propose|提议|propose a solution`],
+['金钱与消费',`cash|现金|pay in cash
+credit|信用；学分|a credit card
+expense|开支|cover the expense
+finance|金融；资助|finance a project
+invest|投资|invest in education`],
+['文化与象征',`ceremony|仪式|an opening ceremony
+origin|起源|the origin of a custom
+religion|宗教|freedom of religion
+symbol|象征；符号|a symbol of hope
+precious|珍贵的|precious memories`],
+['教育选择',`evaluate|评估|evaluate the result
+enroll|注册；入学|enroll in a course
+tuition|学费|pay tuition
+semester|学期|the autumn semester
+curriculum|课程；课程设置|a modern curriculum`],
+['创造与空间',`create|创造|create an opportunity
+design|设计|design a plan
+imagine|想象|imagine a better future
+locate|位于；找到|locate the library
+expand|扩大；扩展|expand vocabulary`],
+['风险与回应',`concern|担忧；涉及|raise a concern
+barrier|障碍|remove a barrier
+crisis|危机|face a crisis
+emergency|紧急情况|an emergency exit
+response|回应；反应|a quick response`],
+['准确与概括',`alternative|替代方案|an alternative plan
+ordinary|普通的|an ordinary day
+complex|复杂的|a complex question
+overall|总体的|the overall result
+precise|精确的|precise information`],
+['规则与责任',`permit|允许；许可证|permit access
+prohibit|禁止|prohibit smoking
+obey|遵守|obey the rules
+punish|惩罚|punish a mistake
+legal|合法的；法律的|legal advice`],
+['历史与地区',`historical|历史的|a historical building
+regional|地区的|regional culture
+western|西方的|western countries
+eastern|东方的|eastern traditions
+dynasty|朝代|the Tang dynasty`],
+['追踪与反思',`maintain|保持；维护|maintain a balance
+reflect|反思；反射|reflect on a mistake
+target|目标|reach a target
+track|追踪；轨道|track your progress
+monitor|监测|monitor the result`],
+['能力与意识',`capable|有能力的|be capable of learning
+familiar|熟悉的|be familiar with the topic
+intelligent|聪明的|an intelligent choice
+aware|意识到的|be aware of the risk
+worthwhile|值得的|a worthwhile effort`],
+['考前收束',`final|最终的；最后的|the final review
+initial|最初的|an initial plan
+long-term|长期的|a long-term goal
+feasible|可行的|a feasible plan
+productive|富有成效的|a productive discussion`]
+];
+const EXTRA_WORDS = EXTRA_WORD_GROUPS.flatMap(([theme, block], group) => block.split('\n').map(line => { const [en, zh, phrase] = line.split('|'); return {id:'w-extra-'+en, en, zh, phrase:phrase.trim(), day:group+1, theme}; }));
+
+WORDS.push(...EXTRA_WORDS);
 const SENTENCES = [
 ['Daily practice helps students build confidence.','这个句子的主语是什么？',['Daily practice','helps','students','confidence'],0,'Daily practice（每天练习）是主语，helps 是谓语。全句：每天练习帮助学生建立信心。'],
 ['It is important to review new words regularly.','真正要做的事情是什么？',['review new words regularly','It','important','is'],0,'It 是形式主语；to review new words regularly 是真正的主语。定期复习生词很重要。'],
@@ -540,11 +694,12 @@ if (typeof module !== 'undefined') module.exports = { WORDS, WORD_GROUPS, SENTEN
     while(days.length<count){if(d.getDay()!==0 && d.getDay()!==6)days.push(dateKey(d));d.setDate(d.getDate()+1);}
     return days;
   }
-  function fresh(){return {version:1,start:dateKey(),selected:1,stars:0,records:{},days:{},course:'',custom:[],scores:[],notes:{}};}
+  function fresh(){return {version:1,start:dateKey(),selected:1,wordTarget:10,stars:0,records:{},days:{},course:'',custom:[],scores:[],notes:{}};}
   const object = x => !!x && typeof x==='object' && !Array.isArray(x);
   const int = (x,min,max) => Number.isInteger(x) && x>=min && x<=max;
   function validate(s) {
     if(!object(s)||s.version!==1) throw Error('存档版本不支持，请保留原文件。');
+    if(s.wordTarget!==undefined&&![10,20,30].includes(s.wordTarget))throw Error('每日词量应为 10、20 或 30');
     if(!validDate(s.start)||!int(s.selected,1,28)||!int(s.stars,0,10000000)||typeof s.course!=='string'||s.course.length>200) throw Error('存档基本信息无效');
     if(!object(s.records)||Object.keys(s.records).length>10000||!object(s.days)||!object(s.notes)) throw Error('存档记录无效');
     for(const [id,r] of Object.entries(s.records)) {
@@ -562,7 +717,15 @@ if (typeof module !== 'undefined') module.exports = { WORDS, WORD_GROUPS, SENTEN
     for(const [d,n] of Object.entries(s.notes))if(!int(Number(d),1,28)||!object(n)||typeof n.writing!=='string'||n.writing.length>5000||typeof n.translation!=='string'||n.translation.length>5000)throw Error('笔记内容无效');
     const drill=typeof module!=='undefined'?require('./drill-core.js'):root.DrillCore;
     if(drill)s.practice=drill.validateHistory(s.practice);
+    if(s.wordTarget===undefined)s.wordTarget=10;
     return s;
+  }
+  function wordPlan(words,day,count=10){
+    if(!int(day,1,28)||![10,20,30].includes(count))throw Error('背词计划无效');
+    if(!words.length)return [];
+    // Use one stable sequence: consecutive days never share a batch, and a full cycle becomes review.
+    const ordered=[...words].sort((a,b)=>a.day-b.day),start=(day-1)*count;
+    return Array.from({length:Math.min(count,ordered.length)},(_,i)=>ordered[(start+i)%ordered.length]);
   }
   function shuffle(a, random=Math.random){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
   function choices(correct, others, random=Math.random){return shuffle([correct,...shuffle([...new Set(others)].filter(x=>x!==correct),random).slice(0,3)],random);}
@@ -591,7 +754,7 @@ if (typeof module !== 'undefined') module.exports = { WORDS, WORD_GROUPS, SENTEN
     return {words:result,skipped};
   }
   function dayData(s,d){return s.days[d]||(s.days[d]={tasks:[],best:0,done:false});}
-  const api={KEY,dateKey,validDate,workdays,fresh,validate,shuffle,choices,answerRecord,dueWords,parseWords,dayData};
+  const api={KEY,dateKey,validDate,workdays,fresh,validate,wordPlan,shuffle,choices,answerRecord,dueWords,parseWords,dayData};
   if(typeof module!=='undefined')module.exports=api;else root.CET=api;
 })(typeof window!=='undefined'?window:globalThis);
 
@@ -655,14 +818,14 @@ window.MoonAudio = (() => {
       audio.onerror=error;audio.play().catch(error);return;
     }
     if(window.MoonNative?.speakWord){
-      if(MoonNative.speakWord(String(text),rate))status('正在使用设备英语语音 · 自定义词汇');
+      if(MoonNative.speakWord(String(text),rate))status('正在使用设备英语语音 · 扩充 / 自定义词');
       else fail('这个词尚无录音。请在手机的文字转语音设置中安装离线英语语音。');
       return;
     }
     const synth=window.speechSynthesis,voices=synth?.getVoices().filter(v=>/^en[-_]/i.test(v.lang));
     if(!voices?.length){fail('这个词尚无录音，系统也没有英语语音。可先使用文本辅助练习。');return;}
     const utterance=new SpeechSynthesisUtterance(text);utterance.lang='en-US';utterance.voice=voices.find(v=>/^en-US/i.test(v.lang))||voices[0];utterance.rate=rate;
-    utterance.onstart=()=>{if(token===generation)status('正在使用系统英语语音 · 自定义词汇');};
+    utterance.onstart=()=>{if(token===generation)status('正在使用系统英语语音 · 扩充 / 自定义词');};
     utterance.onend=()=>{if(token===generation)status('播放完成，可以再次听。');};
     utterance.onerror=e=>{if(token===generation&&!['canceled','interrupted'].includes(e.error))fail('系统朗读未成功，可使用文本辅助练习。');};synth.speak(utterance);
   }
@@ -697,10 +860,23 @@ window.MoonFeel = (() => {
   const animations=new Set(),timers=new Set(),ease='cubic-bezier(.22,1,.36,1)';
   function animate(node,frames,options){if(!node||MoonAudio.reduced()||!node.animate)return;const a=node.animate(frames,options);animations.add(a);a.onfinish=a.oncancel=()=>animations.delete(a);return a;}
   function later(fn,ms){const timer=setTimeout(()=>{timers.delete(timer);fn();},ms);timers.add(timer);}
-  function clear(){for(const a of animations)a.cancel();animations.clear();for(const t of timers)clearTimeout(t);timers.clear();document.querySelectorAll('.spark-layer').forEach(e=>e.remove());}
+  function clear(){for(const a of animations)a.cancel();animations.clear();for(const t of timers)clearTimeout(t);timers.clear();document.querySelectorAll('.spark-layer,.route-transition').forEach(e=>e.remove());}
   document.addEventListener('moon-reduce-motion',clear);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)clear();});
   function enter(){clear();MoonAudio.effect('enter');animate(document.querySelector('#main'),[{opacity:.7,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:240,easing:ease});}
+  function route(label='月夜营地'){
+    document.querySelectorAll('.route-transition').forEach(node=>node.remove());
+    MoonAudio.effect('enter');
+    if(MoonAudio.reduced())return;
+    const layer=document.createElement('div');layer.className='route-transition';layer.setAttribute('aria-hidden','true');
+    const sign=document.createElement('div');sign.className='route-sign';
+    const moon=document.createElement('i');moon.className='route-moon';
+    const title=document.createElement('span');title.textContent=label;sign.append(moon,title);layer.append(sign);document.body.append(layer);
+    animate(layer,[{opacity:0},{opacity:1,offset:.2},{opacity:.9,offset:.48},{opacity:0}],{duration:440,easing:'ease-in-out',fill:'forwards'});
+    animate(sign,[{transform:'translateY(6px) scale(.98)'},{transform:'translateY(-3px) scale(1)'}],{duration:440,easing:ease});
+    animate(document.querySelector('#main'),[{opacity:.55,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:380,easing:ease});
+    later(()=>layer.remove(),460);
+  }
   function word(direction=1){
     clear();
     animate(document.querySelector('.vocab-card,.word-prompt'),[{opacity:.25,transform:`translateX(${direction*16}px)`},{opacity:1,transform:'translateX(0)'}],{duration:280,easing:ease});
@@ -733,7 +909,7 @@ window.MoonFeel = (() => {
     later(()=>layer.remove(),720);
   }
   function finish(){MoonAudio.effect('finish');animate(document.querySelector('#resultContent'),[{transform:'translateY(14px)',opacity:.35},{transform:'translateY(0)',opacity:1}],{duration:340,easing:ease});document.querySelectorAll('#resultContent .word-trail .lit').forEach((node,i)=>animate(node,[{opacity:.25,transform:'scale(.7)'},{opacity:1,transform:'scale(1)'}],{duration:250,delay:i*35,easing:ease}));}
-  return {enter,word,reveal,answer,finish,clear};
+  return {enter,route,word,reveal,answer,finish,clear};
 })();
 
 </script><script>
@@ -878,8 +1054,8 @@ const Drills=(()=>{
  const time=s=>`${Math.floor(s/60)} 分 ${s%60} 秒`;
  function openWords(){
   stopVoice();session=null;view='drill';setNav('home');
-  active={kind:'words',words:WORDS.filter(w=>w.day===state.selected),index:0,revealed:false};
-  document.body.classList.add('studying-words');renderWords();window.scrollTo({top:0,behavior:'instant'});MoonFeel.word();autoSpeakWord(active.words[0].en);
+  active={kind:'words',words:CET.wordPlan(WORDS,state.selected,state.wordTarget),index:0,revealed:false};
+  document.body.classList.add('studying-words');renderWords();window.scrollTo({top:0,behavior:'instant'});MoonFeel.word();MoonFeel.route('单词小屋');autoSpeakWord(active.words[0].en);
  }
  function renderWords(){
   const s=active,w=s.words[s.index];
@@ -889,18 +1065,18 @@ const Drills=(()=>{
    <button id="flipWord" class="primary" aria-expanded="${s.revealed}">${s.revealed?'遮住中文，再回忆':'翻卡 · 查看词义'}</button>
    ${s.revealed?`<div class="vocab-definition"><h3>${esc(w.zh)}</h3><p lang="en">${esc(w.phrase)}</p></div>`:'<p class="muted small">意思想起来了吗？点翻卡核对。</p>'}</div>
    <div class="vocab-navigation"><button id="previousWord" ${s.index===0?'disabled':''}>← 上一个</button><span>${s.index+1} / ${s.words.length}</span><button id="nextWord" ${s.index===s.words.length-1?'disabled':''}>下一个 →</button></div>
-   <div class="drill-actions"><button id="vocabQuiz" class="primary">开始 10 词自测 →</button><button id="wordsToCloze">去 15 选 10</button></div><p class="bottom-note">先回忆，再翻卡。翻卡不计正确率；自测与语境练习共用错词记录，不重复发星光。</p></section>`;
+   <div class="drill-actions"><button id="vocabQuiz" class="primary">开始 ${s.words.length} 词自测 →</button><button id="wordsToCloze">去 15 选 10</button><button id="changeWordTarget">调整每日词量</button></div>${studyTip('words',state.selected-1+s.index)}<p class="bottom-note">先回忆，再翻卡。翻卡不计正确率；自测与语境练习共用错词记录，不重复发星光。</p></section>`;
   back();$('#vocabSpeak').onclick=()=>speak(w.en);$('#vocabSlow').onclick=()=>speak(w.en,.7);
   $('#flipWord').onclick=()=>{s.revealed=!s.revealed;renderWords();MoonFeel.reveal();$('#flipWord').focus({preventScroll:true});};
   const move=offset=>{stopVoice();s.index+=offset;s.revealed=false;renderWords();MoonFeel.word(offset);autoSpeakWord(s.words[s.index].en);};
   $('#previousWord').onclick=()=>move(-1);$('#nextWord').onclick=()=>move(1);
-  $('#vocabQuiz').onclick=()=>startQuiz('vocab');$('#wordsToCloze').onclick=()=>openCloze();
+  $('#vocabQuiz').onclick=()=>startQuiz('vocab');$('#wordsToCloze').onclick=()=>openCloze();$('#changeWordTarget').onclick=()=>go('bag');
  }
  function openCloze(mode='bank'){
   stopVoice();session=null;view='drill';setNav('home');
   const passage=CLOZE_DATA[state.selected-1],words=DrillCore.blanks(passage);
   active={kind:'cloze',passage,mode,answers:Array(10).fill(''),bank:CET.shuffle([...words,...passage.extra]),submitted:false,started:Date.now()};
-  renderCloze();window.scrollTo({top:0,behavior:'instant'});MoonFeel.enter();
+  renderCloze();window.scrollTo({top:0,behavior:'instant'});MoonFeel.route('语境讨伐');
  }
  function renderCloze(){
   const s=active,p=s.passage,previous=history().cloze[p.id],recall=s.mode==='recall';let index=0;
@@ -914,7 +1090,7 @@ const Drills=(()=>{
    <p class="drill-description">${recall?'无词库回忆：回忆本篇的目标词并填写完整拼写；词库外的近义表达不作自动语义评分。':'从 15 个英文词中选 10 个填空，结合词性、搭配和上下文判断。'}${previous?`这篇已练 ${previous.attempts} 次，首轮 ${previous.first}/10；本次是复习。`:''}</p>
    ${s.submitted?'':`<div class="drill-modes"><button id="bankMode" aria-pressed="${!recall}">15 选 10</button><button id="recallMode" aria-pressed="${recall}">无词库挑战</button></div>`}
    ${!recall&&!s.submitted?`<div class="word-bank" aria-label="候选词库">${s.bank.map((w,i)=>`<span>${String.fromCharCode(65+i)}. ${w}</span>`).join('')}</div>`:''}
-   <div class="cloze-passage" lang="en">${passage}</div>${answers}
+   ${studyTip('cloze')}<div class="cloze-passage" lang="en">${passage}</div>${answers}
    <div id="drillFeedback" aria-live="polite"></div><p class="bottom-note">这是围绕每日词汇的缩短篇幅专项，非官方真题。真实四级选词填空占 5%，不要挤占听力和阅读理解的时间。</p>`);
   back();
   if(!s.submitted){
@@ -955,7 +1131,7 @@ const Drills=(()=>{
   const material=LISTENING_DATA.find(p=>p.id===id);if(!material)return;stopVoice();session=null;view='drill';setNav('home');
   const repeat=!!history().listening[id];
   active={kind:'listening',material,orders:material.questions.map(()=>CET.shuffle([0,1,2,3])),answers:Array(material.questions.length).fill(null),started:Date.now(),submitted:false,assisted:false,repeat,plays:0,playing:false,ended:false,error:false};
-  renderListening();window.scrollTo({top:0,behavior:'instant'});MoonFeel.enter();
+  renderListening();window.scrollTo({top:0,behavior:'instant'});MoonFeel.route('灯笼听音');
  }
  function renderListening(){
   const s=active,p=s.material,aids=s.submitted||s.assisted;
@@ -964,7 +1140,7 @@ const Drills=(()=>{
    <div class="sound-row"><button id="playPassage" class="primary">${aids?'原速重播':'播放录音与问题'}</button>${aids?'<button id="slowPassage">0.85 倍速精听</button><button id="stopPassage">停止播放</button>':'<button id="assistListen">开启精听辅助 · 慢速 / 原文</button>'}</div>
    <p id="listeningStatus" role="status">${s.assisted?'下方已开放原文和问题文字；正确答案仍在交卷后显示。':'请先预读选项。播放期间可以选答案。'}</p>
    ${s.assisted&&!s.submitted?`<details class="listening-aids"><summary>展开英文原文，对照跟读</summary><div class="listening-transcript" lang="en">${esc(p.text)}</div></details>`:''}
-   <div class="listening-questions">${p.questions.map((q,i)=>`<fieldset class="listening-question"><legend>${aids?`第 ${i+1} 题 · ${esc(q[0])}`:`Question ${i+1}`}</legend>${s.orders[i].map((j,k)=>`<label class="listen-option ${s.submitted?(j===q[2]?'right':s.answers[i]===j?'miss':''):''}"><input type="radio" name="listen${i}" data-listen-answer="${i}" value="${j}" ${s.answers[i]===j?'checked':''} ${s.submitted?'disabled':''}><span>${String.fromCharCode(65+k)}. ${esc(q[1][j])}</span></label>`).join('')}${s.submitted?`<p class="answer-explain">${s.answers[i]===q[2]?'✓ 答对':'× '+(s.answers[i]===null?'未作答':'答错')} · 正确选项 ${String.fromCharCode(65+s.orders[i].indexOf(q[2]))}<br>${esc(q[3])}</p>`:''}</fieldset>`).join('')}</div>
+   ${studyTip('listen')}<div class="listening-questions">${p.questions.map((q,i)=>`<fieldset class="listening-question"><legend>${aids?`第 ${i+1} 题 · ${esc(q[0])}`:`Question ${i+1}`}</legend>${s.orders[i].map((j,k)=>`<label class="listen-option ${s.submitted?(j===q[2]?'right':s.answers[i]===j?'miss':''):''}"><input type="radio" name="listen${i}" data-listen-answer="${i}" value="${j}" ${s.answers[i]===j?'checked':''} ${s.submitted?'disabled':''}><span>${String.fromCharCode(65+k)}. ${esc(q[1][j])}</span></label>`).join('')}${s.submitted?`<p class="answer-explain">${s.answers[i]===q[2]?'✓ 答对':'× '+(s.answers[i]===null?'未作答':'答错')} · 正确选项 ${String.fromCharCode(65+s.orders[i].indexOf(q[2]))}<br>${esc(q[3])}</p>`:''}</fieldset>`).join('')}</div>
    ${s.submitted?'':`<div class="drill-submit"><span id="listenFilled">已选 ${s.answers.filter(x=>x!==null).length} / ${p.questions.length} 题</span><button id="submitListening" class="primary" ${s.ended?'':'disabled'}>听完后提交整组</button></div><p class="small muted">留空题计错。完整播放一次后才可提交；辅助练习与首次盲听分开记录。</p>`}
    <div id="listeningResult" aria-live="polite"></div>`);
   back();$('#playPassage').onclick=()=>playListening(1);
@@ -1032,10 +1208,52 @@ function phase(){return PHASES[Math.floor((state.selected-1)/7)];}
 function notice(){return storageWarning?`<p class="card notice small" style="margin-bottom:18px">${esc(storageWarning)}</p>`:'';}
 function hero(quiz=false){return `<section class="hero ${quiz?'quiz-scene':''}" aria-label="吉伊、小八、乌萨奇在月夜木桥上冒险"><div class="hero-heading"><div class="eyebrow">28 个工作日 · 一起向 425+ 出发</div><h1>${quiz?'今天，也一起前进吧。':'一起，点亮四级。'}</h1><p>${quiz?'和你一起 · 四级小冒险':'今天，也比昨天多会一点。'}</p></div><div class="day-badge">DAY ${String(state.selected).padStart(2,'0')}<small>${niceDate(schedule()[state.selected-1])}</small></div><div class="companion-line"><span>吉伊 · 小八 · 乌萨奇 陪你学习</span><span>☾ ${esc(phase().name)}</span></div><i class="firefly f1"></i><i class="firefly f2"></i><i class="firefly f3"></i></section>`;}
 const TASKS=[['words','▤','单词小屋','20 分钟','翻卡背词 · 发音 · 词义自测'],['game','✦','语境讨伐','15 分钟','15 选 10 语境 + 无词库回忆'],['listen','♫','灯笼听音','35 分钟','新闻 / 长对话 / 篇章理解'],['read','⌕','月桥阅读','25 分钟','阅读定位 · 给答案找证据'],['write','✎','星光译写','15 分钟','积累表达 · 写下自己的句子']];
+const STUDY_TIPS = {
+ words:[
+  ['先回忆，再翻卡核对。','看见英文先停两秒，试着说出意思，再翻卡。隔天遮住中文重试，比连续看几遍更能发现没记牢的词。'],
+  ['把词和搭配一起记。','例如 focus on the task：既记 focus 的意思，也记后面的 on。再用这个搭配口头造一个短句。'],
+  ['别只记一个中文标签。','如 increase 可以作动词，也可以作名词；留意 increase sales 与 an increase in sales 在句子里的位置。'],
+  ['熟词也要放回句子里。','如 book 除了“书”，还可表示“预订”。做题时以当前语境为准，避免一看到熟词就套第一个意思。']
+ ],
+ cloze:[
+  ['先判词性，再看搭配和上下文。','例如 a ___ solution 中，空格通常需要修饰 solution 的形容词。先排除词性不符的候选，再检查语义；词性只是筛选线索。'],
+  ['先快速通读，再填有把握的空。','通读时抓主题和转折，不必逐词翻译。填完确定的空后，再回头处理难空，最后通读检查连贯性。'],
+  ['留意词形，别只对中文意思。','a/an 后若空格直接作中心词，通常需要单数可数名词；be 后也可能接形容词、过去分词或 -ing，必须看句子结构。'],
+  ['难空先跳过，把时间留给高分值阅读。','选词填空占阅读考试总分中的 5%。可先给这一部分约 5—7 分钟，再按自己的速度调整；别为一个空耗掉几分钟。']
+ ],
+ listen:[
+  ['播放前先看选项之间的差别。','人物、地点、数字、原因分别是什么？只圈关键词，预测可能问什么；选项不是录音原文，听到同一个词也不一定选它。'],
+  ['转折、否定和因果后，留意信息变化。','but/however 常引出改变后的安排；because 给出原因。记录最终决定，并听清 not、no longer 等否定，不能只靠信号词选答案。'],
+  ['数字要记单位，也要听清比较关系。','比如原价、折后价和人数可能一起出现。记“数字 + 单位”，听清 increased by（增加了）与 increased to（增加到）的区别。'],
+  ['漏听一题，立即跟上下一题。','先用已听到的信息排除明显不符的选项，及时作答。不要反复纠结漏掉的句子；复盘时再用原文找出没听懂的位置。']
+ ],
+ read:[
+  ['先看题干，回原文找证据。','用人名、时间、核心动作定位，再读前后句。选项常用同义改写，原词重现只是定位线索，不代表答案一定对。'],
+  ['把选项与原文逐项核对。','检查主体、范围、程度和因果。原文说 some，选项说 all 就需要额外证据；不能因为出现绝对词就机械排除。'],
+  ['推断必须有依据，不凭常识补剧情。','先找原文事实，再选最小、最稳妥的推论。把“可能”写成“必然”，或把相关性写成因果的选项要谨慎。'],
+  ['主旨题看全文，匹配题看同义改写。','主旨要覆盖主要段落，别被单个例子带走。长篇匹配先抓题干关键词再定位核对；同一段可能对应不止一道题。']
+ ],
+ sentence:[
+  ['先找主语和谓语，再读修饰成分。','遇到长句先划出谁做了什么；定语从句和插入语可以暂放一边，主干读通后再补回信息。']
+ ],
+ write:[
+  ['先写完整主干，再补原因和例子。','先写 Students need regular practice.，再用 because 或 for example 展开。准确短句比结构失控的长句更可靠。'],
+  ['作文先列提纲，给检查留时间。','读清题目要求，用几行列出观点和两个理由。正式四级作文通常要求 120—180 词；30 分钟里留几分钟检查拼写和主谓一致。'],
+  ['翻译先定主语和谓语，再补细节。','中文没有明显主语时，根据语义补出合理主语。遇到不会的词可用熟悉的近义表达，但不能随意删掉重要信息。'],
+  ['最后检查四件事：完整、时态、单复数、拼写。','尤其检查每句是否有谓语、第三人称单数是否一致，以及前后时态。参考译文是一种表达，不必逐字照搬。']
+ ]
+};
+function studyTip(kind,index=state.selected-1){
+ const tips=STUDY_TIPS[kind];if(!tips)return '';
+ const chosen=((index%tips.length)+tips.length)%tips.length;
+ const [headline,detail]=tips[chosen];
+ return `<aside class="study-tip" aria-label="做题小技巧"><p><span>小技巧</span>${esc(headline)}</p><details><summary>看例子与其他技巧</summary><p>${esc(detail)}</p><ul>${tips.filter((_,i)=>i!==chosen).map(([title,body])=>`<li><strong>${esc(title)}</strong> ${esc(body)}</li>`).join('')}</ul></details></aside>`;
+}
+const wordMinutes=()=>({10:20,20:35,30:50}[state.wordTarget]);
 const taskCount=d=>TASKS.filter(([id])=>d?.tasks.includes(id)).length;
 function renderHome(){
  const d=dayInfo(),done=taskCount(d),review=CET.dueWords(state,allWords()).length;
- $('#main').innerHTML=notice()+hero()+`<section class="quest-panel"><div class="quest-top"><div><div class="eyebrow">今日学习委托</div><h2>${esc(WORD_GROUPS[state.selected-1][0])}</h2><p class="muted small" style="margin-top:5px">先在单词小屋背词，再用 15 选 10 检查语境运用</p></div><button class="primary" id="startDaily">${d.done?'再练一次':'开始语境讨伐'} <span aria-hidden="true">→</span></button></div><div class="intro-stats"><span>冲刺目标 <b>约 340 → 425+</b></span><span>今日委托 <b>${done} / ${TASKS.length} 完成</b></span><span>等待回访 <b>${review} 个词</b></span><span>建议投入 <b>约 110 分钟</b></span></div></section><div class="section-label"><h2>今晚的五份小委托</h2><span class="small muted">学一点，点亮一点 ✦</span></div><section class="task-list">${TASKS.map(([id,icon,name,time,desc])=>`<article class="task ${d.tasks.includes(id)?'done':''}"><div><span class="task-icon">${icon}</span><span class="task-time">${time}</span></div><h3>${name}</h3><p>${desc}</p><button data-task-open="${id}">${d.tasks.includes(id)?'✓ 已完成 · 查看':'打开委托 →'}</button></article>`).join('')}</section><p class="bottom-note">${[14,21,26].includes(state.selected)?'今天是整卷检验日：用正规试卷按要求完成约 125 分钟测试，再用约 30 分钟复盘；整卷替代今天的常规任务。':'280 个核心词是基础热身。搭配词汇积累、真实听力和阅读，才是这 28 天的主要练习。'}<br>425+ 是冲刺目标，学习进度与星光都不换算为考试分数。</p>`;
+ $('#main').innerHTML=notice()+hero()+`<section class="quest-panel"><div class="quest-top"><div><div class="eyebrow">今日学习委托</div><h2>${esc(WORD_GROUPS[state.selected-1][0])}</h2><p class="muted small" style="margin-top:5px">先在单词小屋背词，再用 15 选 10 检查语境运用</p></div><button class="primary" id="startDaily">${d.done?'再练一次':'开始语境讨伐'} <span aria-hidden="true">→</span></button></div><div class="intro-stats"><span>冲刺目标 <b>约 340 → 425+</b></span><span>今日委托 <b>${done} / ${TASKS.length} 完成</b></span><span>等待回访 <b>${review} 个词</b></span><span>建议投入 <b>约 ${90+wordMinutes()} 分钟</b></span></div></section><div class="section-label"><h2>今晚的五份小委托</h2><span class="small muted">学一点，点亮一点 ✦</span></div><section class="task-list">${TASKS.map(([id,icon,name,time,desc])=>`<article class="task ${d.tasks.includes(id)?'done':''}"><div><span class="task-icon">${icon}</span><span class="task-time">${id==='words'?wordMinutes()+' 分钟':time}</span></div><h3>${name}</h3><p>${id==='words'?'每日 '+state.wordTarget+' 词 · 翻卡 / 发音 / 自测':desc}</p><button data-task-open="${id}">${d.tasks.includes(id)?'✓ 已完成 · 查看':'打开委托 →'}</button></article>`).join('')}</section><p class="bottom-note">${[14,21,26].includes(state.selected)?'今天是整卷检验日：用正规试卷按要求完成约 125 分钟测试，再用约 30 分钟复盘；整卷替代今天的常规任务。':`${WORDS.length} 个核心词，可在学习背包选择每日 10 / 20 / 30 词。搭配真实听力和阅读一起练习。`}<br>425+ 是冲刺目标，学习进度与星光都不换算为考试分数。</p>`;
  $('#startDaily').onclick=()=>startQuiz('daily');document.querySelectorAll('[data-task-open]').forEach(b=>b.onclick=()=>openTask(b.dataset.taskOpen));
 }
 function renderPlan(){
@@ -1051,9 +1269,10 @@ function renderReview(){
  $('#startReview').onclick=()=>startQuiz('review');bindSay();
 }
 function renderBag(){
- $('#main').innerHTML=notice()+`<section class="section-page"><div class="page-heading"><div><div class="eyebrow">YOUR STUDY BACKPACK</div><h1>把新学到的词，也装进背包。</h1><p>词表和学习记录，都由你掌握。</p></div></div><div class="two-col"><section class="card"><h2>单词小屋</h2><p class="small muted" style="margin-top:10px">每天 10 个基础词：先听发音、回忆意思，再翻卡看中文和搭配。词义自测完成后会进入错词回访。</p><button id="bagWords" class="primary" style="margin-top:16px">去背今天的单词 →</button><div class="writing-model">背词和 15 选 10 独立保留：一个帮助记住词义，一个检查能否在文章中运用。</div></section><section class="card"><h2>导入课堂词表</h2><p class="small muted" style="margin-top:10px">使用制表符分隔的 TSV 或 TXT：英文、中文、可选短语。先用示例改写，每行一个词。当前自定义词汇 ${state.custom.length} 个。</p><p style="margin-top:12px"><a id="wordTemplate" href="data:text/tab-separated-values;base64,d29yZAnkuK3mlocJ5pCt6YWN5oiW5L6L5Y+lCmFjaGlldmVtZW50CeaIkOWwse+8m+aIkOe7qQlhIGdyZWF0IGFjaGlldmVtZW50Cm1vdGl2YXRpb24J5Yqo5Yqb77yb5Yqo5py6CW1vdGl2YXRpb24gdG8gbGVhcm4KY29uY2VudHJhdGUJ6ZuG5Lit5rOo5oSP5YqbCWNvbmNlbnRyYXRlIG9uIHlvdXIgc3R1ZHkK" download>下载词表示例</a></p><label style="margin-top:15px">选择词表<input id="wordFile" type="file" accept=".tsv,.txt,text/plain,text/tab-separated-values"></label><button id="practiceCustom" style="margin-top:12px" ${state.custom.length?'':'disabled'}>练习我的课堂词</button><p class="small muted" style="margin-top:12px">一次最多 1000 行；同名词保留原记录。文件只在浏览器本地读取。</p></section></div><div class="two-col"><section class="card"><h2>带走我的进度</h2><p class="small muted" style="margin-top:10px">当前是本地存档，手机与电脑不会自动同步。换设备前导出 JSON，在另一台设备的同一游戏里导入。</p><button id="exportSave" class="primary" style="margin-top:16px">导出学习备份</button><label style="margin-top:16px">导入有效备份（会替换当前进度）<input id="backupFile" type="file" accept=".json,application/json"></label><div id="importPreview" class="writing-model hidden"></div></section><section class="card"><h2>这次旅途怎么用</h2><ul class="small"><li>每天五项任务约 110 分钟。把任务拆成早晚两段也可以。</li><li>第 14、21、26 天做整卷，约 125 分钟测试 + 30 分钟复盘，替代常规任务。</li><li>单词小屋可翻卡和词义自测，语境讨伐保留 15 选 10；灯笼听音可先盲听，或切换精听辅助查看原文、慢速和反复播放。基础词与听力录音均可离线播放。</li><li>译写提供参考表达和自检，不冒充人工作文评分。</li><li>成绩看整卷和各部分错因，星光只奖励练习。</li></ul><details><summary>素材与内容说明</summary><p>月夜插画由豆包 Seedream 5.0 Flash 按用户选择生成，包含 Chiikawa 角色。题库是原创基础练习，不是官方真题。角色相关权利归各自权利人；当前为个人学习版本。</p></details></section></div></section>`;
- const settings=document.createElement('section');settings.className='card sound-settings';settings.innerHTML=`<h2>声音与动态效果</h2><p class="small muted">右上角可随时静音。基础词的豆包少年音和操作音效都能离线播放。</p><label class="checkline"><input id="reduceMotion" type="checkbox" ${MoonAudio.getSettings().reduced?'checked':''}><span>减少动态效果</span></label><p class="small muted">关闭星光飞散和轻弹，也会遵循系统的减少动态效果设置。</p>`;$('.section-page').append(settings);$('#reduceMotion').onchange=e=>MoonAudio.setReduced(e.target.checked);
+ $('#main').innerHTML=notice()+`<section class="section-page"><div class="page-heading"><div><div class="eyebrow">YOUR STUDY BACKPACK</div><h1>把新学到的词，也装进背包。</h1><p>词表和学习记录，都由你掌握。</p></div></div><div class="two-col"><section class="card"><h2>每天，背多少词？</h2><p class="small muted" style="margin-top:10px">${WORDS.length} 个核心词，先听发音、回忆意思，再翻卡和自测。你每天能背 30 词，可以选这一档。</p><div class="word-targets" role="group" aria-label="每日背词数量">${[10,20,30].map(n=>`<button data-word-target="${n}" aria-pressed="${state.wordTarget===n}"><strong>${n}</strong><span>词 / 天</span></button>`).join('')}</div><p id="wordTargetStatus" class="small" role="status">当前每天 ${state.wordTarget} 词 · 约 ${wordMinutes()} 分钟 · ${Math.ceil(WORDS.length/state.wordTarget)} 天一轮</p><p class="small muted" style="margin-top:10px">按学习日顺序取词，整轮结束后重复巩固。改词量会重新分配每日词单，已学记录和错词保留；15 选 10 仍按原主题练习。</p><button id="bagWords" class="primary" style="margin-top:16px">去背今天的单词 →</button><div class="writing-model">背词和 15 选 10 独立保留：一个帮助记住词义，一个检查能否在文章中运用。</div></section><section class="card"><h2>导入课堂词表</h2><p class="small muted" style="margin-top:10px">使用制表符分隔的 TSV 或 TXT：英文、中文、可选短语。先用示例改写，每行一个词。当前自定义词汇 ${state.custom.length} 个。</p><p style="margin-top:12px"><a id="wordTemplate" href="data:text/tab-separated-values;base64,d29yZAnkuK3mlocJ5pCt6YWN5oiW5L6L5Y+lCmFjaGlldmVtZW50CeaIkOWwse+8m+aIkOe7qQlhIGdyZWF0IGFjaGlldmVtZW50Cm1vdGl2YXRpb24J5Yqo5Yqb77yb5Yqo5py6CW1vdGl2YXRpb24gdG8gbGVhcm4KY29uY2VudHJhdGUJ6ZuG5Lit5rOo5oSP5YqbCWNvbmNlbnRyYXRlIG9uIHlvdXIgc3R1ZHkK" download>下载词表示例</a></p><label style="margin-top:15px">选择词表<input id="wordFile" type="file" accept=".tsv,.txt,text/plain,text/tab-separated-values"></label><button id="practiceCustom" style="margin-top:12px" ${state.custom.length?'':'disabled'}>练习我的课堂词</button><p class="small muted" style="margin-top:12px">一次最多 1000 行；同名词保留原记录。文件只在浏览器本地读取。</p></section></div><div class="two-col"><section class="card"><h2>带走我的进度</h2><p class="small muted" style="margin-top:10px">当前是本地存档，手机与电脑不会自动同步。换设备前导出 JSON，在另一台设备的同一游戏里导入。</p><button id="exportSave" class="primary" style="margin-top:16px">导出学习备份</button><label style="margin-top:16px">导入有效备份（会替换当前进度）<input id="backupFile" type="file" accept=".json,application/json"></label><div id="importPreview" class="writing-model hidden"></div></section><section class="card"><h2>这次旅途怎么用</h2><ul class="small"><li>当前每天五项任务约 ${90+wordMinutes()} 分钟。把任务拆成早晚两段也可以。</li><li>第 14、21、26 天做整卷，约 125 分钟测试 + 30 分钟复盘，替代常规任务。</li><li>单词小屋可翻卡和词义自测，语境讨伐保留 15 选 10；灯笼听音可先盲听，或切换精听辅助查看原文、慢速和反复播放。原有 280 词与听力录音可离线播放；新增 140 词使用设备英语语音，离线发音需设备装有英语语音包。</li><li>译写提供参考表达和自检，不冒充人工作文评分。</li><li>成绩看整卷和各部分错因，星光只奖励练习。</li></ul><details><summary>素材与内容说明</summary><p>月夜插画由豆包 Seedream 5.0 Flash 按用户选择生成，包含 Chiikawa 角色。题库是原创基础练习，不是官方真题。角色相关权利归各自权利人；当前为个人学习版本。</p></details></section></div></section>`;
+ const settings=document.createElement('section');settings.className='card sound-settings';settings.innerHTML=`<h2>声音与动态效果</h2><p class="small muted">右上角可随时静音。原有 280 词保留豆包少年音；新增词和自定义词使用设备英语语音。操作音效可离线播放。</p><label class="checkline"><input id="reduceMotion" type="checkbox" ${MoonAudio.getSettings().reduced?'checked':''}><span>减少动态效果</span></label><p class="small muted">关闭星光飞散和轻弹，也会遵循系统的减少动态效果设置。</p>`;$('.section-page').append(settings);$('#reduceMotion').onchange=e=>MoonAudio.setReduced(e.target.checked);
  $('#wordTemplate').onclick=e=>{e.preventDefault();download('word-template.tsv','word\t中文\t搭配\nachievement\t成就\ta great achievement\n','text/tab-separated-values');};
+ document.querySelectorAll('[data-word-target]').forEach(b=>b.onclick=()=>{state.wordTarget=Number(b.dataset.wordTarget);const persisted=save();renderBag();document.querySelector(`[data-word-target="${state.wordTarget}"]`).focus({preventScroll:true});toast(persisted?`已保存：每天 ${state.wordTarget} 词，下次进入单词小屋生效。`:'词量已临时调整，尚未保存，请导出备份。');});
  $('#bagWords').onclick=()=>Drills.openWords();
  $('#practiceCustom').onclick=()=>startQuiz('custom');$('#exportSave').onclick=()=>download('moonlit-cet4-backup-'+CET.dateKey()+'.json',JSON.stringify(state,null,2),'application/json');
  $('#wordFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>200000)throw Error('词表请控制在 200 KB 以内');const parsed=CET.parseWords(await f.text(),state.custom);state.custom.push(...parsed.words);save();renderBag();toast(`已导入 ${parsed.words.length} 个词，跳过 ${parsed.skipped} 个重复词`);}catch(err){toast(err.message);e.target.value='';}};
@@ -1067,14 +1286,14 @@ function openTask(task){
  if(task==='listen')content=Drills.listeningMenu();
  if(task==='read')content=`<h2>每个答案，都有自己的线索。</h2><p class="muted" style="margin-top:15px">${esc(p.read)}</p><div class="writing-model">25 分钟：5 分钟题干定位 → 12 分钟作答 → 8 分钟对照证据与错因。初期可放宽作答时间，先学会找到依据。</div><ul><li>先看题干中的人名、数字、时间和核心动作。</li><li>定位之后读前后句，留意 but、however、because。</li><li>选项含 always、all 等绝对词时，检查原文是否真的支持。</li><li>错误归因：词不认识 / 句子没看懂 / 范围看错 / 时间不足。</li></ul><button id="startReading" class="primary">开始原创短文热身 →</button>`;
  if(task==='write')content=`<h2>今天的表达：${esc(WRITING_TOPICS[state.selected-1])}</h2><p class="muted" style="margin-top:14px">前 7 天先写 3—5 个完整句子；第 8 天起逐步写成 120—180 词短文，熟悉后用 30 分钟限时练习。每日 15 分钟优先练结构和改错。</p><div class="writing-model">写作骨架：提出观点 → 给出两个理由或例子 → 简短总结。优先保证主谓一致、时态和句子完整，少堆复杂长句。</div><label style="margin-top:17px">我的英文表达 <span id="wordCount"></span><textarea id="writingText" maxlength="5000" placeholder="In my view, ...">${esc(n.writing)}</textarea></label><label style="margin-top:13px">今日翻译：${esc(TRANSLATIONS[state.selected-1][0])}<textarea id="translationText" maxlength="5000" placeholder="先自己写，再打开参考表达。">${esc(n.translation)}</textarea></label><button id="saveNote" style="margin-top:12px">保存今天的译写</button><details><summary>打开参考译文与自检</summary><div class="writing-model">${esc(TRANSLATIONS[state.selected-1][1])}</div><p>这是一种参考表达，其他准确自然的译法也可以。检查：意思是否完整、主语和谓语是否齐全、单复数与时态是否一致、拼写和标点是否正确。需要更准确的作文反馈时交给老师批改。</p></details>`;
- $('#main').innerHTML=`<section class="section-page"><div class="page-heading"><div><div class="eyebrow">DAY ${String(state.selected).padStart(2,'0')} · ${TASKS.find(t=>t[0]===task)[2]}</div><h1>${TASKS.find(t=>t[0]===task)[2]}</h1></div><button id="taskBack">← 回到营地</button></div><section class="card">${content}<label class="checkline"><input type="checkbox" id="taskDone" ${d.tasks.includes(task)?'checked':''}><span>我已完成这项练习及复盘（手动记录）</span></label></section></section>`;
+ $('#main').innerHTML=`<section class="section-page"><div class="page-heading"><div><div class="eyebrow">DAY ${String(state.selected).padStart(2,'0')} · ${TASKS.find(t=>t[0]===task)[2]}</div><h1>${TASKS.find(t=>t[0]===task)[2]}</h1></div><button id="taskBack">← 回到营地</button></div><section class="card">${studyTip(task)}${content}<label class="checkline"><input type="checkbox" id="taskDone" ${d.tasks.includes(task)?'checked':''}><span>我已完成这项练习及复盘（手动记录）</span></label></section></section>`;
  $('#taskBack').onclick=()=>go('home');$('#taskDone').onchange=e=>{setTask(task,e.target.checked);toast(e.target.checked?'这份委托完成啦 ✦':'已更新任务记录');};
  if(task==='listen')Drills.bindListeningMenu();if(task==='read')$('#startReading').onclick=()=>startQuiz('reading');
  if(task==='write'){
   const count=()=>$('#wordCount').textContent=`· ${($('#writingText').value.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g)||[]).length} 词`;
   count();$('#writingText').oninput=count;$('#saveNote').onclick=()=>{state.notes[state.selected]={writing:$('#writingText').value,translation:$('#translationText').value};save();toast('今天写下的句子已保存');};
  }
- window.scrollTo({top:0,behavior:'instant'});MoonFeel.enter();
+ window.scrollTo({top:0,behavior:'instant'});MoonFeel.route(TASKS.find(t=>t[0]===task)[2]);
 }
 function setTask(id,checked){const d=dayInfo();d.tasks=checked?[...new Set([...d.tasks,id])]:d.tasks.filter(t=>t!==id);save();}
 function wordQuestion(w){
@@ -1087,21 +1306,21 @@ function readingQuestions(d){const r=READINGS[d-1];return r.questions.map(q=>{co
 function startQuiz(mode){
  if(mode==='daily'){Drills.openCloze();return;}if(mode==='listen'){Drills.openListening(LISTENING_DATA[(state.selected-1)%8].id);return;}
  stopVoice();
- let questions=[];const ws=WORDS.filter(w=>w.day===state.selected);
+ let questions=[];const ws=CET.wordPlan(WORDS,state.selected,state.wordTarget);
  if(mode==='vocab')questions=CET.shuffle(ws).map(meaningQuestion);
  if(mode==='review')questions=CET.dueWords(state,allWords()).slice(0,15).map(w=>wordQuestion(w));
  if(mode==='custom')questions=CET.shuffle(state.custom).slice(0,15).map(w=>wordQuestion(w));
  if(mode==='reading')questions=[sentenceQuestion(SENTENCES[state.selected-1]),...readingQuestions(state.selected)];
  if(!questions.length){toast('当前没有待练习的内容');return;}
- session={mode,questions,outcomes:[],index:0,correct:0,combo:0,bestCombo:0,earned:0,answered:false,selected:null,finished:false,started:Date.now()};view='quiz';setNav('home');if(mode==='vocab')document.body.classList.add('studying-words');renderQuiz();window.scrollTo({top:0,behavior:'instant'});if(mode!=='vocab')MoonFeel.enter();
+ session={mode,questions,outcomes:[],index:0,correct:0,combo:0,bestCombo:0,earned:0,answered:false,selected:null,finished:false,started:Date.now()};view='quiz';setNav('home');if(mode==='vocab')document.body.classList.add('studying-words');renderQuiz();window.scrollTo({top:0,behavior:'instant'});MoonFeel.route(({vocab:'词义自测',review:'错词回访',custom:'课堂词汇',reading:'月桥阅读'})[mode]);
 }
 function wordTrail(){return `<div class="word-trail" role="img" aria-label="本轮已答 ${session.outcomes.length} 题，答对 ${session.correct} 题">${session.questions.map((_,i)=>`<span class="${session.outcomes[i]===true?'lit':session.outcomes[i]===false?'revisit':i===session.index?'current':''}" aria-hidden="true">${session.outcomes[i]===true?'✦':session.outcomes[i]===false?'·':''}</span>`).join('')}</div>`;}
 function renderVocabQuestion(s,q){
- $('#main').innerHTML=`<section class="study-panel quiz-panel" tabindex="-1"><header class="study-heading"><div><h1>单词小屋 · 自测</h1><p>第 ${state.selected} 天 · ${s.index+1} / ${s.questions.length}</p></div><button id="leaveQuiz">结束本轮</button></header><div class="study-scene" role="img" aria-label="月夜伙伴陪你点亮这轮学习"></div><div class="quiz-meta"><span id="trailLabel">已答 ${s.outcomes.length} / ${s.questions.length}</span><span><span id="comboCount">连击 ${s.combo}</span> <span id="roundStars">✦ ${s.earned}</span></span></div><div id="wordTrail">${wordTrail()}</div><div class="word-prompt"><h2 class="quiz-title english-word" lang="en">${esc(q.word.en)}</h2><div class="sound-row"><button id="playWord">♫ 再听一遍</button><button id="slowWord">0.7 倍速</button></div><p id="audioStatus" class="small muted" role="status"></p><p class="question-instruction">先回忆词义，再选答案。</p></div><div class="options">${q.options.map((o,i)=>`<button class="option" data-answer="${i}"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><button id="revealAnswer" class="recall-help">想不起来 · 看答案</button><div id="feedback" aria-live="polite"></div></section>`;
+ $('#main').innerHTML=`<section class="study-panel quiz-panel" tabindex="-1"><header class="study-heading"><div><h1>单词小屋 · 自测</h1><p>第 ${state.selected} 天 · ${s.index+1} / ${s.questions.length}</p></div><button id="leaveQuiz">结束本轮</button></header><div class="study-scene" role="img" aria-label="月夜伙伴陪你点亮这轮学习"></div><div class="quiz-meta"><span id="trailLabel">已答 ${s.outcomes.length} / ${s.questions.length}</span><span><span id="comboCount">连击 ${s.combo}</span> <span id="roundStars">✦ ${s.earned}</span></span></div><div id="wordTrail">${wordTrail()}</div><div class="word-prompt"><h2 class="quiz-title english-word" lang="en">${esc(q.word.en)}</h2><div class="sound-row"><button id="playWord">♫ 再听一遍</button><button id="slowWord">0.7 倍速</button></div><p id="audioStatus" class="small muted" role="status"></p><p class="question-instruction">先回忆词义，再选答案。</p></div><div class="options">${q.options.map((o,i)=>`<button class="option" data-answer="${i}"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><button id="revealAnswer" class="recall-help">想不起来 · 看答案</button><div id="feedback" aria-live="polite"></div>${studyTip('words',s.index)}</section>`;
 }
 function renderQuiz(){
  if(!session)return;const s=session,q=s.questions[s.index],names={vocab:'单词小屋 · 词义自测',daily:'今日讨伐',review:'错词回访',custom:'课堂词汇',listen:'听音辨词',reading:'阅读热身'};
- if(s.mode==='vocab')renderVocabQuestion(s,q);else $('#main').innerHTML=hero(true)+`<section class="quest-panel quiz-panel" tabindex="-1"><div class="quiz-meta"><span class="pill">${names[s.mode]} · ${s.index+1} / ${s.questions.length}</span><span class="muted"><span id="comboCount" class="${s.combo>=3?'combo-bright':''}">连击 ${s.combo}</span> <span id="roundStars" style="color:var(--gold)">✦ ${s.earned}</span></span></div><div class="progress-track"><div class="progress-fill" style="width:${s.index/s.questions.length*100}%"></div></div>${q.passage?`<div class="eyebrow">${esc(q.instruction)} · 原创短文</div><div class="passage" tabindex="0" role="region" aria-label="阅读文章，可上下滚动">${esc(q.passage)}</div>`:''}<h2 class="quiz-title ${q.kind==='meaning'?'english-word':''}">${esc(q.title)}</h2><p class="question-instruction">${q.passage?'返回原文，寻找能支持答案的句子。':esc(q.instruction)}</p>${q.text?`<p class="sentence">${esc(q.text)}</p>`:''}${q.word&&q.kind!=='spelling'?`<div class="sound-row"><button id="playWord">♫ ${q.kind==='listen'?'播放单词':'听发音'}</button><button id="slowWord">♫ 慢速播放</button>${q.kind==='listen'?'<button id="revealWord" class="quiet-link">显示文本辅助</button>':''}</div><p id="audioStatus" class="small muted" aria-live="polite"></p>`:''}${q.kind==='spelling'?'<form id="spellingForm" class="spelling-form"><label>英文单词<input id="spellingInput" maxlength="70" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="输入完整英文单词"></label><button class="primary" type="submit">提交拼写</button><button id="skipSpelling" type="button">暂时想不起来</button></form>':`<div class="options">${q.options.map((o,i)=>`<button class="option" data-answer="${i}"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div>`}<div id="feedback" aria-live="polite"></div><div class="quiz-footer"><span>${q.kind==='spelling'?'输入英文后提交':'电脑按 1—4 选答案'} · Enter 下一题</span><button id="leaveQuiz">结束本轮</button></div></section>`;
+ if(s.mode==='vocab')renderVocabQuestion(s,q);else $('#main').innerHTML=hero(true)+`<section class="quest-panel quiz-panel" tabindex="-1"><div class="quiz-meta"><span class="pill">${names[s.mode]} · ${s.index+1} / ${s.questions.length}</span><span class="muted"><span id="comboCount" class="${s.combo>=3?'combo-bright':''}">连击 ${s.combo}</span> <span id="roundStars" style="color:var(--gold)">✦ ${s.earned}</span></span></div><div class="progress-track"><div class="progress-fill" style="width:${s.index/s.questions.length*100}%"></div></div>${q.passage?`<div class="eyebrow">${esc(q.instruction)} · 原创短文</div><div class="passage" tabindex="0" role="region" aria-label="阅读文章，可上下滚动">${esc(q.passage)}</div>`:''}<h2 class="quiz-title ${q.kind==='meaning'?'english-word':''}">${esc(q.title)}</h2><p class="question-instruction">${q.passage?'返回原文，寻找能支持答案的句子。':esc(q.instruction)}</p>${q.text?`<p class="sentence">${esc(q.text)}</p>`:''}${q.word&&q.kind!=='spelling'?`<div class="sound-row"><button id="playWord">♫ ${q.kind==='listen'?'播放单词':'听发音'}</button><button id="slowWord">♫ 慢速播放</button>${q.kind==='listen'?'<button id="revealWord" class="quiet-link">显示文本辅助</button>':''}</div><p id="audioStatus" class="small muted" aria-live="polite"></p>`:''}${q.kind==='spelling'?'<form id="spellingForm" class="spelling-form"><label>英文单词<input id="spellingInput" maxlength="70" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="输入完整英文单词"></label><button class="primary" type="submit">提交拼写</button><button id="skipSpelling" type="button">暂时想不起来</button></form>':`<div class="options">${q.options.map((o,i)=>`<button class="option" data-answer="${i}"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div>`}<div id="feedback" aria-live="polite"></div>${studyTip(q.kind==='reading'?'read':q.kind==='sentence'?'sentence':'words')}<div class="quiz-footer"><span>${q.kind==='spelling'?'输入英文后提交':'电脑按 1—4 选答案'} · Enter 下一题</span><button id="leaveQuiz">结束本轮</button></div></section>`;
  document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>answer(+b.dataset.answer));$('#leaveQuiz').onclick=()=>finishQuiz(true);if($('#revealAnswer'))$('#revealAnswer').onclick=()=>answer(-1);
  if(q.kind==='spelling'){const submit=e=>{e.preventDefault();const value=$('#spellingInput').value;if(!value.trim()){toast('请输入英文，或点“暂时想不起来”。');return;}answer(value);};$('#spellingForm').onsubmit=submit;$('#skipSpelling').onclick=()=>answer('');}
  if(q.word&&q.kind!=='spelling'){
@@ -1129,7 +1348,7 @@ function finishQuiz(early=false){
  if(!session||session.finished)return;const s=session;s.finished=true;stopVoice();const answered=s.index+(s.answered?1:0),complete=!early&&answered===s.questions.length;
  if(complete&&s.mode==='vocab')setTask('words',true);
  if(complete&&s.mode==='daily'){const d=dayInfo();d.done=true;d.best=Math.max(d.best,Math.round(s.correct/s.questions.length*100));setTask('game',true);}
- save();$('#resultContent').innerHTML=`<div class="result-moon">${complete?'☾':'✧'}</div><div class="eyebrow">A LITTLE BRIGHTER THAN BEFORE</div><h2 id="resultTitle">${complete?(s.correct===s.questions.length?(s.mode==='vocab'?'十个词，全都答对了。':'这一轮，全都答对了。'):'今晚的灯笼，更亮了一点。'):'先休息一下，也很好。'}</h2>${s.mode==='vocab'?wordTrail():''}<div class="result-score">${s.correct} <small>/ ${answered} 题答对</small></div><p class="muted small">${complete?'已完成这一轮练习。':'已记录答过的词；再次进入会开始新一轮。'}${s.mode==='vocab'&&complete?`本轮 ${s.correct} 个答对，${s.questions.length-s.correct} 个需要回访。`:''}${s.mode==='daily'&&complete?'还有背词、听力、阅读和译写委托。':''}</p><div class="metric-row"><div><b>+${s.earned}</b><small>本轮星光</small></div><div><b>${s.bestCombo}</b><small>最高连击</small></div></div><p class="small muted">错词已进手账，学过的词会按间隔回访。<br>这是练习结果，不是四级估分。</p>`;$('#resultDialog').showModal();if(complete)MoonFeel.finish();
+ save();$('#resultContent').innerHTML=`<div class="result-moon">${complete?'☾':'✧'}</div><div class="eyebrow">A LITTLE BRIGHTER THAN BEFORE</div><h2 id="resultTitle">${complete?(s.correct===s.questions.length?(s.mode==='vocab'?`${s.questions.length} 个词，全都答对了。`:'这一轮，全都答对了。'):'今晚的灯笼，更亮了一点。'):'先休息一下，也很好。'}</h2>${s.mode==='vocab'?wordTrail():''}<div class="result-score">${s.correct} <small>/ ${answered} 题答对</small></div><p class="muted small">${complete?'已完成这一轮练习。':'已记录答过的词；再次进入会开始新一轮。'}${s.mode==='vocab'&&complete?`本轮 ${s.correct} 个答对，${s.questions.length-s.correct} 个需要回访。`:''}${s.mode==='daily'&&complete?'还有背词、听力、阅读和译写委托。':''}</p><div class="metric-row"><div><b>+${s.earned}</b><small>本轮星光</small></div><div><b>${s.bestCombo}</b><small>最高连击</small></div></div><p class="small muted">错词已进手账，学过的词会按间隔回访。<br>这是练习结果，不是四级估分。</p>`;$('#resultDialog').showModal();if(complete)MoonFeel.finish();
 }
 $('#closeResult').onclick=()=>$('#resultDialog').close();$('#resultDialog').addEventListener('close',()=>{session=null;go('home');$('#startDaily').focus({preventScroll:true});});
 function stopVoice(){MoonAudio.stop();}
@@ -1138,7 +1357,7 @@ function speak(text,rate=1){MoonAudio.speak(text,rate,msg=>{if($('#audioStatus')
 function audioFail(msg){if($('#audioStatus'))$('#audioStatus').textContent=msg;toast(msg);}
 function bindSay(){document.querySelectorAll('[data-say]').forEach(b=>b.onclick=()=>speak(b.dataset.say));}
 function setNav(v){MoonFeel.clear();document.body.classList.remove('studying-words');document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===v);b.setAttribute('aria-current',b.dataset.view===v?'page':'false');});}
-function go(v){stopVoice();view=v;session=null;setNav(v);({home:renderHome,plan:renderPlan,review:renderReview,bag:renderBag}[v]||renderHome)();window.scrollTo({top:0,behavior:'instant'});MoonFeel.enter();}
+function go(v){stopVoice();view=v;session=null;setNav(v);({home:renderHome,plan:renderPlan,review:renderReview,bag:renderBag}[v]||renderHome)();window.scrollTo({top:0,behavior:'instant'});MoonFeel.route(({home:'月夜营地',plan:'28 天旅途',review:'错词手账',bag:'学习背包'})[v]);}
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>go(b.dataset.view));$('.brand').onclick=e=>{e.preventDefault();go('home');};
 document.addEventListener('keydown',e=>{if(e.repeat||e.altKey||e.ctrlKey||e.metaKey||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||$('#resultDialog').open||!session||session.finished)return;if(session.questions[session.index].kind!=='spelling'&&/^[1-4]$/.test(e.key)){e.preventDefault();answer(+e.key-1);}if(e.key==='Enter'&&session.answered){e.preventDefault();nextQuestion();}});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopVoice();});
