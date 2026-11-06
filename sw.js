@@ -1,5 +1,5 @@
 'use strict';
-const VERSION="1.3.1-880a52f16cd2",FILES=["index.html", "pwa.js", "pwa.css", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"],PREFIX='moonlit-web-',CACHE=PREFIX+VERSION;
+const VERSION="1.4.0-19bc6015cf7b",FILES=["index.html", "pwa.js", "pwa.css", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"],PREFIX='moonlit-web-',CACHE=PREFIX+VERSION;
 const base=new URL('./',self.location.href),urls=FILES.map(p=>new URL(p,base).href),allowed=new Set(urls);
 async function tell(message){for(const client of await self.clients.matchAll({includeUncontrolled:true}))client.postMessage(message);}
 let caching;
